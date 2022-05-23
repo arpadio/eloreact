@@ -1,0 +1,30 @@
+.results-history {
+  align-items: baseline;
+  justify-content: flex-start;
+
+  h2 {
+    padding-right: 1rem;
+  }
+}
+
+#resultsList {
+  .flexbox {
+    margin-bottom: 1rem;
+  }
+
+  .flex-child {
+    flex: 0 0 100%;
+  }
+
+  .result-date {
+    @include for-tablet-portrait-up {
+      flex: 0 0 25%;
+    };
+  }
+
+  .result-result {
+    @include for-tablet-portrait-up {
+      flex: 1 1 auto;
+    };
+  }
+}
