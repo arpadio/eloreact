@@ -1,15 +1,21 @@
-import {initializeApp} from 'firebase/app'
 
-const config = {
-  apiKey: "AIzaSyBXaqqLD07K97SknzNrgkr1LVtVMD5zyss",
-  authDomain: "arpadio-3b99d.firebaseapp.com",
-  databaseURL: "https://arpadio-3b99d.firebaseio.com",
-  storageBucket: "arpadio-3b99d.appspot.com",
-  messagingSenderId: "782130103264"
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
+// import { getAnalytics } from "firebase/analytics"
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDEwOD8DjlkPr0TZZFeT9Ar47ymrH9r33g",
+  authDomain: "arpadio-react.firebaseapp.com",
+  projectId: "arpadio-react",
+  storageBucket: "arpadio-react.appspot.com",
+  messagingSenderId: "477129220295",
+  appId: "1:477129220295:web:6b063ec3f881eb17b69ee2",
+  measurementId: "G-R2ZJQ1BV59"
 };
 
-// Load firebasejs before app.js
-const realtimeDB = initializeApp(config);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
-// Set the reference to the Firebase database
-export const dbRef = realtimeDB.database().ref();
+export const db = getFirestore(app);
