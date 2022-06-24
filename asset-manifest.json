@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eloreact/static/css/main.53007d0b.css",
-    "main.js": "/eloreact/static/js/main.605fa2d0.js",
+    "main.css": "/eloreact/static/css/main.0ac6bbf0.css",
+    "main.js": "/eloreact/static/js/main.cb5ed3ad.js",
     "index.html": "/eloreact/index.html",
-    "main.53007d0b.css.map": "/eloreact/static/css/main.53007d0b.css.map",
-    "main.605fa2d0.js.map": "/eloreact/static/js/main.605fa2d0.js.map"
+    "main.0ac6bbf0.css.map": "/eloreact/static/css/main.0ac6bbf0.css.map",
+    "main.cb5ed3ad.js.map": "/eloreact/static/js/main.cb5ed3ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.53007d0b.css",
-    "static/js/main.605fa2d0.js"
+    "static/css/main.0ac6bbf0.css",
+    "static/js/main.cb5ed3ad.js"
   ]
 }
