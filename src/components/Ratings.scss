@@ -1,30 +1,46 @@
-.results-history {
-  align-items: baseline;
-  justify-content: flex-start;
+$shapeWidth: 15px;
 
-  h2 {
-    padding-right: 1rem;
-  }
+.shape {
+  width: $shapeWidth;
 }
 
-#resultsList {
-  .flexbox {
-    margin-bottom: 1rem;
+.square {
+  aspect-ratio: 1/1;
+  width: $shapeWidth;
+  background: blue;
+}
+
+.circle {
+  @extend .square;
+  border-radius: 100%;
+  background: #d7ce00;
+}
+
+.hexagon {
+  margin-top: calc(#{$shapeWidth} * 0.288); // = 0.288w
+  width: $shapeWidth;
+  height: calc(#{$shapeWidth} * 0.577); // = 0.577w
+  background-color: #6C6;
+  position: relative;
+
+  &:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-bottom: calc(#{$shapeWidth} * 0.288) solid #6C6; // = 0.288w
+    border-left: calc(#{$shapeWidth} * 0.5) solid transparent; // = 0.5w
+    border-right: calc(#{$shapeWidth} * 0.5) solid transparent; // = 0.5w
+    position: absolute;
+    top: calc(#{$shapeWidth} * -0.288); // = -0.288w
   }
 
-  .flex-child {
-    flex: 0 0 100%;
-  }
-
-  .result-date {
-    @include for-tablet-portrait-up {
-      flex: 0 0 25%;
-    };
-  }
-
-  .result-result {
-    @include for-tablet-portrait-up {
-      flex: 1 1 auto;
-    };
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: calc(#{$shapeWidth} * -0.288); // = -0.288w
+    border-top: calc(#{$shapeWidth} * 0.288) solid #6C6; // = 0.288w
+    border-left: calc(#{$shapeWidth} * 0.5) solid transparent; // = 0.5w
+    border-right: calc(#{$shapeWidth} * 0.5) solid transparent; // = 0.5w
   }
 }

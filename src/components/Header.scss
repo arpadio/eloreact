@@ -8,12 +8,12 @@ header {
   }
 
   a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:hover {
       color: $brand-color;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 

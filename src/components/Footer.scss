@@ -13,8 +13,19 @@ footer {
   }
 
   p {
+    color: $alt-text-color;
     @include for-tablet-portrait-up {
-      max-width: 25rem;
+      max-width: 38rem;
+    };
+  }
+
+  .quote-text {
+    font-style: italic;
+  }
+
+  .credits {
+    @include for-tablet-portrait-up {
+      max-width: 275px;
     };
   }
 }

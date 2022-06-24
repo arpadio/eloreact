@@ -31,8 +31,9 @@ export default function Ratings() {
       <table className="card ranking-table">
         <thead>
           <tr>
-            <th>Rank</th>
+            <th>&nbsp;</th>
             <th>Name</th>
+            <th>Ranking</th>
             <th>Country</th>
             <th>Won</th>
             <th>Lost</th>
@@ -41,11 +42,12 @@ export default function Ratings() {
         </thead>
         <tbody>
           {rankedPlayers.map((player, index) => <tr key="player.id">
-            <td>{index}</td>
+            <td><div className={`shape ${player.data.shape}`}></div></td>
             <td>{player.data.name}</td>
+            <td>{index}</td>
             <td>{player.data.country}</td>
-            <td></td>
-            <td></td>
+            <td>{player.data.won}</td>
+            <td>{player.data.lost}</td>
             <td>{player.data.rating}</td>
           </tr>)}
 

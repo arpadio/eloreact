@@ -28,7 +28,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: $alt-text-color;
+  color: $text-color;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 p {
@@ -90,7 +102,7 @@ table {
   text-align: left;
 
   th {
-    color: $alt-text-color;
+    @extend h3;
   }
 
   tr {

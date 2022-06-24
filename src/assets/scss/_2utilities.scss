@@ -47,6 +47,7 @@
 .card {
   background: $card-bg-color;
   padding: 1rem;
+  border: 1px solid #6688cc;
   border-radius: 5px;
   margin-bottom: $spacing-unit;
 
@@ -73,8 +74,8 @@
 
 .btn {
   color: $text-color;
-  background: $emphasis-bg;
-  border: 1px solid $emphasis-bg;
+  background: transparent;
+  border: 1px solid $alt-text-color;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   transition: 0.5s ease;
